@@ -1,5 +1,24 @@
-plugins {
-    id 'com.android.application'
+apply plugin: 'com.android.application'
+
+project.ext.set("BuildDate", new Date());
+
+def genVersionName() {
+    def verName = System.getenv('SERVER_PACKAGE_VERSION_NAME')
+    if (verName) {
+        return verName
+    } else {
+        def formattedDate = (project.ext.BuildDate).format('yyyyMMdd')
+        return formattedDate
+    }
+}
+
+def genVersionCode() {
+    def verCode = System.getenv('SERVER_PACKAGE_VERSION_CODE')
+    if (verCode) {
+        return verCode.toInteger()
+    } else {
+        return ((project.ext.BuildDate).getTime() / 1000).toInteger()
+    }
 }
 
 android {
@@ -8,18 +27,33 @@ android {
 
     defaultConfig {
         applicationId "com.cvte.androidui"
-        minSdkVersion 30
+        minSdkVersion 29
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode genVersionCode()
+        versionName genVersionName()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        hanson{
+            keyAlias 'hanson'
+            keyPassword 'hanson'
+            storeFile file("hanson.keystore")
+            storePassword 'hanson'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "AndroidUi-${variant.name}-${variant.versionName}.apk"
+        }
     }
 
     buildTypes {
         release {
+            signingConfig signingConfigs.hanson
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
