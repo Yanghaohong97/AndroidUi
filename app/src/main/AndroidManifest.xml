@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TextViewActivity" />
+        <activity android:name=".ButtonActivity" />
     </application>
 
 </manifest>

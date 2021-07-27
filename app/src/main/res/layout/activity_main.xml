@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="5dp">
     <Button
         android:id="@+id/btn_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextButton"/>
+        android:text="TextButton"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_main"/>
     <Button
         android:id="@+id/btn_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"/>
+        android:text="Button"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_textview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_main"/>
 
-</LinearLayout>
+</RelativeLayout>
