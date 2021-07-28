@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button mBtnTextView;
     private Button mBtnButton;
+    private Button mBtnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mBtnTextView = findViewById(R.id.btn_textview);
         mBtnButton = findViewById(R.id.btn_button);
+        mBtnEditText = findViewById(R.id.btn_editview);
         setListeners();
 
     }
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         OnClick onClick = new OnClick();
         mBtnTextView.setOnClickListener(onClick);
         mBtnButton.setOnClickListener(onClick);
+        mBtnEditText.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -40,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_button :
                     //跳转到Button演示页面
                     intent = new Intent(MainActivity.this, ButtonActivity.class);
+                    break;
+                case R.id.btn_editview :
+                    //跳转到EditText演示页面
+                    intent = new Intent(MainActivity.this, EditTextActivity.class);
                     break;
                 default:
                     break;

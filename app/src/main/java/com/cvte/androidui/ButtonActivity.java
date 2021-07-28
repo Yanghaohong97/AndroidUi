@@ -1,5 +1,6 @@
 package com.cvte.androidui;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -36,6 +37,7 @@ public class ButtonActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void setOnTouchListener() {
         OnTouch onTouch = new OnTouch();
         button4.setOnTouchListener(onTouch);
