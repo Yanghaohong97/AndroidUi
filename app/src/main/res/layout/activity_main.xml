@@ -38,4 +38,16 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_btn_main"/>
 
+    <Button
+        android:id="@+id/btn_radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_editview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_main"/>
+
 </RelativeLayout>

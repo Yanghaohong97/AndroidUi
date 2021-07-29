@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <RadioGroup
+        android:id="@+id/radio_grounp_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="20dp"
+            android:checked="true"
+            android:buttonTint="#AA6600"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_button_1"
+            android:layout_marginTop="10dp"
+            android:text="女"
+            android:textSize="20dp"
+            android:buttonTint="#AA6600"
+            />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_grounp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/radio_grounp_1"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@drawable/selector_orange_radiobutton"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button_4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_button_1"
+            android:layout_marginStart="10dp"
+            android:text="女"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/selector_orange_radiobutton"
+            android:button="@null"
+            />
+    </RadioGroup>
+</RelativeLayout>
