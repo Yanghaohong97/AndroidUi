@@ -1,17 +1,21 @@
 package com.cvte.androidui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.cvte.androidui.recyclerview.RecyclerViewActivity;
+
 public class MainActivity extends AppCompatActivity {
     private Button mBtnTextView;
     private Button mBtnButton;
     private Button mBtnEditText;
     private Button mBtnRadioButton;
+    private Button mBtnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnButton = findViewById(R.id.btn_button);
         mBtnEditText = findViewById(R.id.btn_editview);
         mBtnRadioButton = findViewById(R.id.btn_radiobutton);
+        mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
         setListeners();
 
     }
@@ -31,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnButton.setOnClickListener(onClick);
         mBtnEditText.setOnClickListener(onClick);
         mBtnRadioButton.setOnClickListener(onClick);
+        mBtnRecyclerView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -54,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_radiobutton :
                     //跳转到RadioButton演示页面
                     intent = new Intent(MainActivity.this, RadioButtonActivity.class);
+                    break;
+                case R.id.btn_recyclerview :
+                    //跳转到RecyclerView演示页面
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
                 default:
                     break;
