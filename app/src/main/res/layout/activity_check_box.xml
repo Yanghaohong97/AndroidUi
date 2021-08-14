@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你会哪些移动开发"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/checkbox_andorid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android" />
+
+    <CheckBox
+        android:id="@+id/checkbox_ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IOS" />
+
+    <CheckBox
+        android:id="@+id/checkbox_h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H5" />
+
+    <CheckBox
+        android:id="@+id/checkbox_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你最喜爱的编程语言"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_checkbox"
+            android:text="Java"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_cpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_checkbox"
+            android:text="C++"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

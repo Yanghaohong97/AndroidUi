@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidUI">
+        <activity android:name=".CheckBoxActivity"></activity>
+        <activity android:name=".recyclerview.MixLineatRecyclerViewActivity" />
+        <activity android:name=".recyclerview.FallRecyclerViewActivity" />
+        <activity android:name=".recyclerview.GridRecyclerViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
