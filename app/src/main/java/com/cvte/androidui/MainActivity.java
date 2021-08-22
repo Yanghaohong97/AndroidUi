@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRecyclerView;
     private Button mBtnCheckBox;
     private Button mBtnWebView;
+    private Button mBtnToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
         mBtnWebView = findViewById(R.id.btn_webview);
+        mBtnToast = findViewById(R.id.btn_toast);
         setListeners();
 
     }
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRecyclerView.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnWebView.setOnClickListener(onClick);
+        mBtnToast.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -78,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_webview :
                     //跳转到WebView演示页面
                     intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+                case R.id.btn_toast:
+                    //跳转到Toast演示页面
+                    intent = new Intent(MainActivity.this, ToastActivity.class);
                     break;
                 default:
                     break;
