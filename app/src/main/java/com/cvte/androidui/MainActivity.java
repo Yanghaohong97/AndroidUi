@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRadioButton;
     private Button mBtnRecyclerView;
     private Button mBtnCheckBox;
+    private Button mBtnWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton = findViewById(R.id.btn_radiobutton);
         mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
+        mBtnWebView = findViewById(R.id.btn_webview);
         setListeners();
 
     }
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton.setOnClickListener(onClick);
         mBtnRecyclerView.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
+        mBtnWebView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -71,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_recyclerview :
                     //跳转到RecyclerView演示页面
                     intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_webview :
+                    //跳转到WebView演示页面
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
                     break;
                 default:
                     break;

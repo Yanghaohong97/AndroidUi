@@ -74,4 +74,16 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_btn_main"/>
 
+    <Button
+        android:id="@+id/btn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_recyclerview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_main"/>
+
 </RelativeLayout>
