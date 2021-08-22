@@ -27,7 +27,7 @@ android {
 
     defaultConfig {
         applicationId "com.cvte.androidui"
-        minSdkVersion 29
+        minSdkVersion 28
         targetSdkVersion 30
         versionCode genVersionCode()
         versionName genVersionName()
