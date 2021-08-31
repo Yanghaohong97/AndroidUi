@@ -11,11 +11,14 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidUI">
-        <activity android:name=".DialogActivity"></activity>
+        <activity android:name=".ImageViewActivity"></activity>
+        <activity android:name=".DialogActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".ProgressActivity" />
         <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".recyclerview.MixLineatRecyclerViewActivity" />
         <activity android:name=".recyclerview.FallRecyclerViewActivity" />
         <activity android:name=".recyclerview.GridRecyclerViewActivity" />

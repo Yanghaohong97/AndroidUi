@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.cvte.androidui.gridview.GridViewActivity;
+import com.cvte.androidui.listview.ListViewActivity;
 import com.cvte.androidui.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRadioButton;
     private Button mBtnRecyclerView;
     private Button mBtnCheckBox;
+    private Button mBtnImageView;
+    private Button mBtnListView;
+    private Button mBtnGridView;
+    private Button mBtnLifeCycle;
+    private Button mBtnJump;
+    private Button mBtnFragment;
     private Button mBtnWebView;
     private Button mBtnToast;
     private Button mBtnDialog;
@@ -32,9 +40,15 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton = findViewById(R.id.btn_radiobutton);
         mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
+        mBtnImageView = findViewById(R.id.btn_imageview);
+        mBtnListView = findViewById(R.id.btn_listview);
+        mBtnGridView = findViewById(R.id.btn_gridview);
+        mBtnLifeCycle = findViewById(R.id.btn_lifecycle);
+        mBtnJump = findViewById(R.id.btn_jump);
+        mBtnFragment = findViewById(R.id.btn_fragment);
         mBtnWebView = findViewById(R.id.btn_webview);
         mBtnToast = findViewById(R.id.btn_toast);
-        mBtnDialog = (Button) findViewById(R.id.btn_dialog);
+        mBtnDialog = findViewById(R.id.btn_dialog);
         mBtnProgress = findViewById(R.id.btn_progress);
         setListeners();
 
@@ -48,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton.setOnClickListener(onClick);
         mBtnRecyclerView.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
+        mBtnImageView.setOnClickListener(onClick);
+        mBtnListView.setOnClickListener(onClick);
+        mBtnGridView.setOnClickListener(onClick);
+        mBtnLifeCycle.setOnClickListener(onClick);
+        mBtnJump.setOnClickListener(onClick);
+        mBtnFragment.setOnClickListener(onClick);
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
         mBtnDialog.setOnClickListener(onClick);
@@ -79,6 +99,30 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_checkbox :
                     //跳转到CheckBox演示页面
                     intent = new Intent(MainActivity.this, CheckBoxActivity.class);
+                    break;
+                case R.id.btn_imageview:
+                    //跳转到ImageView演示界面
+                    intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.btn_listview:
+                    //跳转到ListView演示界面
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_gridview:
+                    //跳转到GridView演示界面
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_lifecycle:
+                    //跳转到LifeCycle演示界面
+//                    intent = new Intent(MainActivity.this, LifeCycleActivity.class);
+                    break;
+                case R.id.btn_jump:
+                    //跳转到AActivity演示界面
+//                    intent = new Intent(MainActivity.this, AActivity.class);
+                    break;
+                case R.id.btn_fragment:
+                    //跳转到Fragment演示界面
+//                    intent = new Intent(MainActivity.this, ContainerActivity.class);
                     break;
                 case R.id.btn_recyclerview :
                     //跳转到RecyclerView演示页面

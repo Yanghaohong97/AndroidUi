@@ -1,127 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="5dp">
-    <Button
-        android:id="@+id/btn_textview"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextButton"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
-    <Button
-        android:id="@+id/btn_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_textview"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
 
-    <Button
-        android:id="@+id/btn_editview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EidtView"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_button"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="TextButton"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_radiobutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RadioButton"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_editview"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_textview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_checkbox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_radiobutton"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_editview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="EidtView"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_checkbox"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_editview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="RadioButton"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_webview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WebView"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_checkbox"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_radiobutton"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="CheckBox"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_toast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Toast"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_webview"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_checkbox"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="ImageView"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_dialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dialog"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_toast"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_imageview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="ListView"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/btn_progress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Progress"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_below="@id/btn_dialog"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_btn_main"/>
+        <Button
+            android:id="@+id/btn_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_listview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="GridView"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_lifecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_gridview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="LifeCycle"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_jump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_lifecycle"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="Jump"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_jump"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="Fragment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_fragment"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="RecyclerView"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_recyclerview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="WebView"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_webview"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="Toast"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_toast"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="Dialog"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_dialog"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_main"
+            android:text="Progress"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
 
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
