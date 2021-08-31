@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidUI">
+        <activity android:name=".DialogActivity"></activity>
         <activity android:name=".ToastActivity" />
         <activity android:name=".WebViewActivity" />
+        <activity android:name=".ProgressActivity" />
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".recyclerview.MixLineatRecyclerViewActivity" />
         <activity android:name=".recyclerview.FallRecyclerViewActivity" />

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="10"
+        android:max="100"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟进度"
+        android:textSize="15dp"
+        android:background="@drawable/bg_btn_main"
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyProgressBar"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_progressDialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="ProgressDialog1"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_btn_main"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_progressDialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="ProgressDialog1"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_btn_main"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

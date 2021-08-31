@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnCheckBox;
     private Button mBtnWebView;
     private Button mBtnToast;
+    private Button mBtnDialog;
+    private Button mBtnProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
         mBtnWebView = findViewById(R.id.btn_webview);
         mBtnToast = findViewById(R.id.btn_toast);
+        mBtnDialog = (Button) findViewById(R.id.btn_dialog);
+        mBtnProgress = findViewById(R.id.btn_progress);
         setListeners();
 
     }
@@ -46,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
+        mBtnDialog.setOnClickListener(onClick);
+        mBtnProgress.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -85,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_toast:
                     //跳转到Toast演示页面
                     intent = new Intent(MainActivity.this, ToastActivity.class);
+                    break;
+                case R.id.btn_dialog:
+                    //跳转到Dialog演示界面
+                    intent = new Intent(MainActivity.this, DialogActivity.class);
+                    break;
+                case R.id.btn_progress:
+                    //跳转到Progress演示页面
+                    intent = new Intent(MainActivity.this, ProgressActivity.class);
                     break;
                 default:
                     break;
