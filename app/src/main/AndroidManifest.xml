@@ -19,6 +19,8 @@
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity android:name=".fragment.ContainerActivity" />
         <activity android:name=".recyclerview.MixLineatRecyclerViewActivity" />
         <activity android:name=".recyclerview.FallRecyclerViewActivity" />
         <activity android:name=".recyclerview.GridRecyclerViewActivity" />

@@ -111,19 +111,7 @@
             android:layout_below="@id/btn_gridview"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_btn_main"
-            android:text="LifeCycle"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/btn_jump"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_lifecycle"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_btn_main"
-            android:text="Jump"
+            android:text="Activity LifeCycle"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20dp" />
@@ -132,7 +120,7 @@
             android:id="@+id/btn_fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_jump"
+            android:layout_below="@id/btn_lifecycle"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_btn_main"
             android:text="Fragment"

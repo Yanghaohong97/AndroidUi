@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.cvte.androidui.fragment.ContainerActivity;
 import com.cvte.androidui.gridview.GridViewActivity;
 import com.cvte.androidui.listview.ListViewActivity;
 import com.cvte.androidui.recyclerview.RecyclerViewActivity;
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnListView;
     private Button mBtnGridView;
     private Button mBtnLifeCycle;
-    private Button mBtnJump;
     private Button mBtnFragment;
     private Button mBtnWebView;
     private Button mBtnToast;
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView = findViewById(R.id.btn_listview);
         mBtnGridView = findViewById(R.id.btn_gridview);
         mBtnLifeCycle = findViewById(R.id.btn_lifecycle);
-        mBtnJump = findViewById(R.id.btn_jump);
         mBtnFragment = findViewById(R.id.btn_fragment);
         mBtnWebView = findViewById(R.id.btn_webview);
         mBtnToast = findViewById(R.id.btn_toast);
@@ -66,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
         mBtnLifeCycle.setOnClickListener(onClick);
-        mBtnJump.setOnClickListener(onClick);
         mBtnFragment.setOnClickListener(onClick);
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
@@ -113,16 +111,12 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
                 case R.id.btn_lifecycle:
-                    //跳转到LifeCycle演示界面
-//                    intent = new Intent(MainActivity.this, LifeCycleActivity.class);
-                    break;
-                case R.id.btn_jump:
-                    //跳转到AActivity演示界面
-//                    intent = new Intent(MainActivity.this, AActivity.class);
+                    //跳转到Activity LifeCycle演示界面
+                    intent = new Intent(MainActivity.this, LifeCycleActivity.class);
                     break;
                 case R.id.btn_fragment:
                     //跳转到Fragment演示界面
-//                    intent = new Intent(MainActivity.this, ContainerActivity.class);
+                    intent = new Intent(MainActivity.this, ContainerActivity.class);
                     break;
                 case R.id.btn_recyclerview :
                     //跳转到RecyclerView演示页面
