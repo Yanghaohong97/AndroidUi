@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnToast;
     private Button mBtnDialog;
     private Button mBtnProgress;
+    private Button mBtnGlide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnToast = findViewById(R.id.btn_toast);
         mBtnDialog = findViewById(R.id.btn_dialog);
         mBtnProgress = findViewById(R.id.btn_progress);
+        mBtnGlide = findViewById(R.id.btn_glide);
         setListeners();
 
     }
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnToast.setOnClickListener(onClick);
         mBtnDialog.setOnClickListener(onClick);
         mBtnProgress.setOnClickListener(onClick);
+        mBtnGlide.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -137,6 +140,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_progress:
                     //跳转到Progress演示页面
                     intent = new Intent(MainActivity.this, ProgressActivity.class);
+                    break;
+                case R.id.btn_glide:
+                    //跳转到Glide演示页面
+                    intent = new Intent(MainActivity.this, GlideActivity.class);
                     break;
                 default:
                     break;
