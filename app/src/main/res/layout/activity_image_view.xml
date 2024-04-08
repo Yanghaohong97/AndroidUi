@@ -42,4 +42,13 @@
         android:layout_below="@id/iv_3"
         android:layout_marginTop="10dp"
         />
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_below="@id/iv_4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_icon"
+        />
+
 </RelativeLayout>
